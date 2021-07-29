@@ -8,9 +8,13 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "windows": "react-native run-windows"
+    "windows": "react-native run-windows",
+    "postinstall": "patch-package"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "react-native-async-storage/async-storage",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
     "react": "17.0.1",
     "react-native": "0.64.1",
     "react-native-windows": "0.64.14"
